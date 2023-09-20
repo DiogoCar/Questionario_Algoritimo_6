@@ -1,0 +1,71 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+import java.lang.Math;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+      double sala , des , des2;
+        
+        String ssala;
+   
+        
+        
+        
+        ssala=JOptionPane.showInputDialog(null, "Digite o salario: ");
+        
+      sala= Integer.parseInt(ssala);
+      
+ if (sala >=2300 || sala <= 5000)
+  {
+   des= (7.5 * sala)/100;
+   des2= sala - des;
+   JOptionPane.showMessageDialog(null,"Desconto em 7,5%: "+ des2 + "reais");
+  
+  }
+
+  if (sala >=5000 || sala <= 7000)
+  {
+   des= (9 * sala)/100 ;
+   des2= sala - des;
+   JOptionPane.showMessageDialog(null,"Desconto em 9%: "+ des2 + "reais");
+   
+  }
+
+  if (sala >=7000 || sala <= 9000)
+  {
+    des= (11 * sala)/100 ;
+   des2= sala - des;
+   JOptionPane.showMessageDialog(null,"Desconto em 11%: "+ des2 + "reais");
+   
+  }
+
+  if (sala >=9000)
+  {
+    des= (14 * sala)/100 ;
+   des2= sala - des;
+   JOptionPane.showMessageDialog(null,"Desconto em 14%: "+ des2 + "reais");
+  
+  }
+
+if (sala <=2300)
+  {
+    JOptionPane.showMessageDialog(null,"Valor não aceito");
+  }
+   
+    }
+}
